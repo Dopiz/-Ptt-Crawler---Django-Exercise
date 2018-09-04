@@ -1,0 +1,12 @@
+<table style="width: 90%">
+    <tr>
+        <th>Article Title</th>
+        <th>Article Link</th>
+    </tr>
+    {% for history in history_list %}
+    <tr>
+        <th>{{ history.article_title }}</th>
+        <th><a href="{{ history.article_link }}">Link</a></th>
+    </tr>
+    {% endfor %}
+</table>
